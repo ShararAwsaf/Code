@@ -5,6 +5,7 @@ Lots of things on the way....
 ```Dynamic Programming```
 
 Overlapping : To use memory to use the previous state results for upcoming states\
+**For non overlapping subproblems the Memory usage doesn't happen resulting in Divide & Conquer instead**
 Subproblem : Recursive breakdown. <Requires base case and a recursive case that eventually hits the base case>\
 Optimal Substructure : To ensure use of Bellman Equation. The optimal substructure formation is critical and most often the "TOUGH" part of dp problems
 
