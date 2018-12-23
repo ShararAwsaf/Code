@@ -5,9 +5,12 @@ Lots of things on the way....
 ```Dynamic Programming```
 
 Overlapping : To use memory to use the previous state results for upcoming states\
-**For non overlapping subproblems the Memory usage doesn't happen resulting in Divide & Conquer instead**
+**For non overlapping subproblems the Memory usage doesn't happen resulting in Divide & Conquer instead e.g Merge sort and Quick Sort**
 Subproblem : Recursive breakdown. <Requires base case and a recursive case that eventually hits the base case>\
-Optimal Substructure : To ensure use of Bellman Equation. The optimal substructure formation is critical and most often the "TOUGH" part of dp problems
+
+Overlapping subproblem : Any recursive algorithm should solve the same problem over and over rather than generating new subproblem.
+
+Optimal Substructure : To ensure use of Bellman Equation. The optimal substructure formation is critical and most often the "TOUGH" part of dp problems. In other words, it means solutions to an optimization problem can be obtained by the combination of optimal soultions to subproblems.
 
 Steps:
 Memoization
@@ -22,3 +25,10 @@ Tabular
 ~Pretty neat and sophisticated code that is very appealing to look at but hard to generate or understand sometimes. The glory is much higher than average to the people coming up with these sort of algorithms but sacrifices readability if overtly optimized~
 
 2. 
+
+
+
+Shortest Path problem Analysis (after memoization)
+ - The (s,v) for V number of vertices for the different possibilities for v
+ - Time/Subproblem : The minimization problem is number of incoming edges E to eaach v vertex and total V vertices will have E edges as incoming edges.
+ - V+E is | (->vertex) for all V vertices = E
