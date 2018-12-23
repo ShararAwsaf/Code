@@ -30,5 +30,6 @@ Tabular
 
 Shortest Path problem Analysis (after memoization)
  - The (s,v) for V number of vertices for the different possibilities for v
- - Time/Subproblem : The minimization problem is number of incoming edges E to eaach v vertex and total V vertices will have E edges as incoming edges.
- - V+E is | (->vertex) for all V vertices = E
+ - Time/Subproblem : The minimization problem is number of incoming edges E to eaach v vertex and total V vertices will have E edges as incoming edges. indegree(v) + 1 for each vertex and so for all vertices V sum up the indegree for each vertex + constant time making E(indegrees) + V(there are V constant time operations)
+ - V+E is | (->vertex) for all V vertices = E. 
+ Sum of (indegree(v) + 1) = O(V+E) --> Handshaking Lemma
